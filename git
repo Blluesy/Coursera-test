@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: green;
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            color: gold;
+        }
+        article{
+            padding: 20px;
+            width: 100%;
+            background-color: rgb(245, 244, 244);
+            height: 300px;
+        }
+        footer{
+            background-color: grey;
+            padding: 10px;
+            text-align: center;
+            color:white;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login My Form</h1>
+    </header>
+    <section>
+        <article>
+            <p id="id" style="text-align: center;font-size: 20px;" ></p>
+            <script>
+                var Tarigi = new Date();
+                var tarigistr=Tarigi.toString();
+                tarigistr= tarigistr.substring(0,tarigistr.indexOf("GMT"));
+                document.getElementById("id").innerHTML= "შესრულების თარიღი და დრო : "+tarigistr;
+
+            </script>
+            <form>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>სახელი:</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>გვარი:</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>mail:</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>მობილური:</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>დაბადების თარიღი:</td>
+                            <td>
+                                <input type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="reset">
+                            </td>
+                            <td>
+                                <input type="submit">
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </form>
+
+        </article>
+    </section>
+    <footer>
+        <p>2021 copywrite ©ყველა უფლება დაცულია</p>
+    </footer>
+</body>
+</html>
