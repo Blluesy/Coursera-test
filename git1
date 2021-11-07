@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+
+		header {
+		  background-color: green;
+		  padding: 30px;
+		  text-align: center;
+		  font-size: 20px;
+		  color: gold;
+		}
+
+		article {
+		  padding: 20px;
+		  width: 100%;
+		  background-color: #f1f1f1;
+		  height: 300px;
+		}
+
+		footer {
+		  background-color: #777;
+		  padding: 10px;
+		  text-align: center;
+		  color: white;
+		}
+		
+		</style>
+	</head>
+	<body>
+
+
+	<header>
+	  <h1>Login My Form</h1>
+	</header>
+	
+	<section>
+	  <article>
+	    
+		<p id="id" style="text-align:center;font-size: 20px;"></p>
+		
+		<script>
+		   var TariRi = new Date();
+		   var TariRistr = TariRi.toString();
+		   
+		   TariRistr = TariRistr.substring(0,TariRistr.indexOf("GMT"));
+		   
+		   document.getElementById("id").innerHTML = "შესრულების თარიღი და დრო: " + TariRistr;
+		</script>
+		<form>
+			<table align="center">
+				<tr><td>სახელი:</td> <td><input type="text" ></td></tr>
+				<tr><td>გვარი:</td> <td><input type="text"></td></tr>
+				<tr><td>mail:</td> <td><input type="text"></td></tr>
+				<tr><td>მობილური:</td> <td><input type="text"></td></tr>
+				<tr><td>დაბადების თარიღი:</td> <td><input type="date"></td></tr>
+				<tr><td><input type="reset"> </td> <td><input type="submit"></td></tr>
+			</table>
+		</form>
+	  </article>	
+	</section>
+
+	<footer>
+	  <p>2021 copywrite &copy;ყველა უფლება დაცულია</p>
+	</footer>
+
+	</body>
+</html>
